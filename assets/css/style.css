@@ -1,0 +1,79 @@
+/*  
+    #a4c2d1; egg blue
+    #dbdcde; light grey
+    #1f7798; mid-blue
+    #184f63; dark-blue
+*/
+
+/* global styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a4c2d1; /*Egg blue */    
+}
+h1, h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #184f63; /* Dark blue */
+}
+
+.sharp-corners, .sharp-corners * {
+    border-radius: 0;
+}
+
+/* Buttons */
+.custom-btn {
+    background-color: #1f7798;
+    border: #1f7798;
+}
+
+.custom-btn:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a;
+}
+
+/* About */
+.about {    
+    background-color: white /* White */
+    
+}
+
+/* Portfolio */
+.portfolio {    
+    background-color: #dbdcde; /* Light grey */    
+}
+#portfolio .card-title {
+    color: #1f7798; /* Mid blue */
+    font-size: 1.2rem;
+}
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798; /* Mid blue */
+}
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/* Contact */
+.contact {   
+    background-color: white; /* White */    
+}
+
+/*header*/
+#hero {
+    background-color: #dbdcde; /* Light grey */
+    background-image: url('assets/images/hero.webp');
+    background-size: cover;
+    background-position: 50% 70%;
+    min-height: 500px;
+    padding: 5% 7%;
+}
+
+/* Media Queries */
+
+
+/*Use Bootstrap breakpoints to make the site responsive for XL screen*/
+@media screen and (min-width: 1200px) { 
+    #portfolio .card-text {
+        min-height: auto;
+    }    
+}
